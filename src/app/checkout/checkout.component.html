@@ -1,0 +1,9 @@
+<form  class="container" #form=ngForm (submit)="placeorder(form)">
+    <h2  class="header">Place your order Here!!</h2>
+    <input type="text" name="name" class="form-control" placeholder="Name" [(ngModel)]="order.name">
+    <input type="text" name="name" class="form-control" placeholder="Area" [(ngModel)]="order.area">
+    <input type="text" name="name" class="form-control" placeholder="Pincode" [(ngModel)]="order.pincode">
+    <input type="text" name="name" class="form-control" placeholder="City" [(ngModel)]="order.city">
+    <input type="text" name="name" class="form-control" placeholder="Phone" [(ngModel)]="order.phone">
+    <button type="submit" class="btn btn-primary">Place Order</button>
+</form>

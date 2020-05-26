@@ -1,0 +1,11 @@
+<!-- Search form -->
+<form  class="form-inline d-flex justify-content-center" style="margin: 10px;">
+    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+    <i class="fa fa-search"></i>
+</form>
+
+<div  class="row" style="display: flex; justify-content: center;">
+    <!-- data is child property and empData is array of objects which is parent property= Prop Binding -->
+    <app-product [data]="Edata" *ngFor="let Edata of empData" style="margin: 30px;">
+    </app-product>
+</div>

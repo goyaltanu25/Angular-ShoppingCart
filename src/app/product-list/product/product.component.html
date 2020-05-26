@@ -1,0 +1,13 @@
+<div appHightlight (click)="showproduct()" class="card" style="padding: 14px;">
+  <img style="height: 100px; width: 300px;" src="{{data.image}}" class="card-img-top" alt="Image not loaded" />
+  <div class="card-body">
+    <h5 class="card-title">{{data.name}}</h5>
+    <p class="card-text">
+      <strong>Brand:</strong>{{data.brand}}<br>
+      <!-- <strong>D.O.B. </strong>{{data.dob}}<br> -->
+      <strong>Product ID:</strong>{{data.productid}}<br>
+      <strong>Price:</strong>{{data.price}}<br>
+      <!-- <strong>Skills: </strong>{{data.skills}}</p> -->
+    <button class="btn btn-primary">Add Product</button>
+  </div>
+</div>

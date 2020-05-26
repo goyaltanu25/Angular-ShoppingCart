@@ -1,0 +1,18 @@
+  <form  class="container" #form=ngForm (submit)="onLogin(form)"> 
+    <div class="form-group">
+      <h2 class="header">Login Here!!</h2>
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" name="password" class="form-control" id="exampleInputPassword1" ngModel>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1" ngModel>
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <a class="link" routerLink="forgot">Forgot-password?</a><br><br>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
